@@ -1,0 +1,159 @@
+/*TODAS LAS PAGINAS*/
+
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
+.titulo {
+    color: #B4B4B4;
+    font-size: 40px;
+    text-align: center;
+    margin: 10px;
+}
+
+/*HEADER*/
+
+.logo {
+    width: 150px;
+}
+
+header .logo {
+    align-items: center;
+}
+
+
+header {
+    background-color: #303030;
+    display: flex;
+    align-items: center;
+    height: 80px;
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    padding: 0 300px;
+}
+
+nav ul li {
+    margin: 0 10px;
+}
+
+nav ul a {
+    font-size: 20px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-decoration: none;
+    color: #FFFFFF;
+}
+
+/*FOOTER*/
+
+footer {
+    background-color: #B4B4B4;
+}
+
+.footer {
+    display: flex;
+    align-items: center;
+    margin: 10px;
+    height: 40vh;
+    padding: 0 300px;
+}
+
+.footer img {
+    width: 40px;
+    margin: 0 10px;
+}
+
+.footer h2 {
+    font-size: 18px;
+    color: #1f1f28;
+}
+
+.mapa {
+    width: 400px;
+    height: 200px; 
+    border-radius: 8px;
+}
+
+
+/* PAGINA INICIO*/
+#inicio {
+    background-color: #1f1f28;
+    text-align: center;
+    font-family: "Sigmar", serif;
+    color: #9146F6;
+    height: 100vh;
+    margin: 10px;
+}
+
+
+#inicio section img {
+    width: 250px;
+}
+
+
+/*PAGINA PRODUCTOS*/
+#productos {
+    background-color: #1f1f28;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    height: 150vh;
+}
+
+#productos .elementos {
+    background-color:#B4B4B4;
+}
+
+.contenedorElementos {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+
+}
+
+.elementos {
+    width: 30%;
+    border-radius: 8px;
+}
+
+.elementos h3 {
+    font-size: 22px;
+    text-align: center;
+    padding: 20px 0;
+}
+
+.elementos img {
+    width: 200px;
+    margin: 0 100px;
+}
+
+.elementos p {
+    text-align: center;
+}
+
+/*PAGINA INFORMACION*/
+#informacion {
+    background-color: #1f1f28;
+    text-align: center;
+    color: #9146F6;
+}
+
+
+/*PAGINA CONTACTO*/
+#contacto {
+    background-color: #1f1f28;
+    text-align: center;
+    color: #9146F6;
+    height: 80vh;
+}
+
+
+/*PAGINA SOBRE NOSOTROS*/
+#sobre-nosotros {
+    background-color: #1f1f28;
+    text-align: center;
+    color: #9146F6;
+    height: 80vh;
+}
