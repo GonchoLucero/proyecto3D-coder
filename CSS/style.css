@@ -137,7 +137,8 @@ footer {
 #informacion {
     background-color: #1f1f28;
     text-align: center;
-    color: #9146F6;
+    color: #4D7EA8;
+    height: 60vh;
 }
 
 
@@ -148,6 +149,7 @@ footer {
     color: #9146F6;
     height: 80vh;
 }
+
 
 
 /*PAGINA SOBRE NOSOTROS*/
