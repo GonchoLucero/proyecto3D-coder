@@ -1,0 +1,57 @@
+/*FOOTER*/
+footer {
+    background-color: var(--primary-color);
+    color: var(--texto-color);
+}
+
+.footer {
+    display: flex;
+    align-items: center;
+    height: 40vh;
+    flex-direction: column;
+
+    img {
+        width: 40px;
+        margin: 10px;
+    }
+
+    h2 {
+        font-size: 18px;
+        margin-top: 10px;
+    }
+}
+
+.mapa {
+    width: 100%;
+    max-width: 400px;
+    height: 250px;
+    border: none;
+    border-radius: 8px;
+}
+
+.footer-derechos {
+    text-align: center;
+    margin-top: 2rem;
+    font-size: 0.9rem;
+    border-top: 1px solid #fbfbfb;
+    padding-top: 1rem;
+}
+
+@media (max-width: 600px) {
+    .footer .titulo {
+        font-size: 1.5rem;
+    }
+
+    .footer section {
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .footer section img {
+        width: 36px;
+    }
+
+    .footer .mapa {
+        height: 250px;
+    }
+}

@@ -1,0 +1,35 @@
+/*NAVBAR*/
+.navbar {
+    background-color: var(--primary-color);
+    display: flex;
+    text-decoration: none;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navbar-nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 1;
+}
+
+.nav-link {
+    display: block;
+    color: var(--texto-color);
+    font-size: 20px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.nav-link.active {
+
+    color: #fff !important;
+}
+
+.nav-link:hover {
+    color: var(--texto-color);
+}
+
+.navbar-toggler{
+    background-color: var(--texto-color);
+}

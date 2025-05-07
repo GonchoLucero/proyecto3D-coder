@@ -1,0 +1,44 @@
+/* PAGINA INICIO*/
+.intro {
+    text-align: center;
+    padding: 2rem;
+    color: #E0E1DD;
+
+    h2 {
+        color: var(--primary-color);
+        font-weight: bold;
+    }
+
+    p {
+        font-size: 1rem;
+        color: var(--text-color);
+    }
+}
+
+.inicio {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+    padding: 2rem;
+}
+
+.carteles {
+    background: var(--secondary-color);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    max-width: 300px;
+    padding: 1.5rem;
+    text-align: center;
+
+    h3 {
+        font-size: 25px;
+        color: var(--texto-color);
+        padding: 1rem;
+    }
+
+    img {
+        max-width: 100%;
+        border-radius: 8px;
+    }
+}

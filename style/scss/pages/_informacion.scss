@@ -1,0 +1,56 @@
+/*PAGINA INFORMACION*/
+#informacion {
+    height: 90vh;
+    margin-top: 10px;
+}
+
+.ideas ul {
+    text-align: center;
+    list-style: none;
+    color: var(--text-color);
+    font-weight: bold;
+    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+    font-size: 18px;
+    margin-top: 20px;
+
+    li {
+        margin-bottom: 1rem;
+    }
+}
+
+.titulo2 {
+    color: var(--primary-color);
+    font-weight: bold;
+    font-size: 30px;
+    text-align: center;
+    margin-top: 60px;
+}
+
+.row {
+    margin-top: 40px;
+}
+
+@media (max-width: 768px) {
+    #informacion .titulo {
+        font-size: 1.5rem;
+    }
+
+    .ideas ul li {
+        font-size: 1rem;
+        padding: 0.8rem;
+    }
+
+    .container .row {
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .container .col {
+        flex: 1 1 100%;
+        padding: 1rem;
+    }
+
+    .container .col img {
+        width: 70px;
+    }
+}

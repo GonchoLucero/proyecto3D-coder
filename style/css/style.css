@@ -1,9 +1,3 @@
-/*TODAS LAS PAGINAS*/
-* {
-  padding: 0px;
-  margin: 0px;
-}
-
 /*COLORES*/
 :root {
   --primary-color: #2c3e50;
@@ -12,6 +6,12 @@
   --text-color: #333;
   --texto-color: white;
   --texto2-color:#4E35;
+}
+
+/*TODAS LAS PAGINAS*/
+* {
+  padding: 0px;
+  margin: 0px;
 }
 
 body {
