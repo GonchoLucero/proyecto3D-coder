@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /*COLORES*/
 :root {
   --primary-color: #2c3e50;
@@ -5,7 +6,6 @@
   --light-color: #EBEBEB;
   --text-color: #333;
   --texto-color: white;
-  --texto2-color:#4E35;
 }
 
 /*TODAS LAS PAGINAS*/
@@ -148,30 +148,87 @@ footer {
   color: var(--text-color);
 }
 
-.inicio {
+#carrusel-inicio .img-carrusel {
+  width: 100%;
+  height: auto;
+  max-height: 400px;
+  object-fit: contain;
+  border-radius: 12px;
+}
+#carrusel-inicio .carousel-caption {
+  background-color: rgba(0, 0, 0, 0.6);
+  padding: 1rem;
+  border-radius: 10px;
+  color: var(--texto-color);
+}
+#carrusel-inicio .carousel-caption h5 {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+#carrusel-inicio .carousel-caption p {
+  font-size: 1rem;
+}
+@media (max-width: 768px) {
+  #carrusel-inicio .carousel-caption {
+    bottom: 1rem;
+  }
+  #carrusel-inicio .carousel-caption h5 {
+    font-size: 1.2rem;
+  }
+  #carrusel-inicio .carousel-caption p {
+    font-size: 0.9rem;
+  }
+}
+#carrusel-inicio .carousel-control-prev-icon,
+#carrusel-inicio .carousel-control-next-icon {
+  background-image: none;
+  color: black;
+  font-size: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#carrusel-inicio .carousel-control-prev-icon::before,
+#carrusel-inicio .carousel-control-next-icon::before {
+  content: "‹";
+}
+#carrusel-inicio .carousel-control-prev-icon::after,
+#carrusel-inicio .carousel-control-next-icon::after {
+  content: "›";
+}
+
+.testimonios {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   gap: 2rem;
   padding: 2rem;
 }
-
-.carteles {
-  background: var(--secondary-color);
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  border-radius: 10px;
-  max-width: 300px;
+.testimonios .testimonio-card {
+  background-color: var(--secondary-color);
+  border-radius: 12px;
   padding: 1.5rem;
+  max-width: 300px;
   text-align: center;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
-.carteles h3 {
-  font-size: 25px;
+.testimonios .testimonio-card .testimonio-img {
+  width: 120px;
+  height: 120px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin-bottom: 1rem;
+  border: 3px solid var(--primary-color);
+}
+.testimonios .testimonio-card h4 {
+  font-size: 1.1rem;
+  margin-bottom: 0.5rem;
   color: var(--texto-color);
-  padding: 1rem;
 }
-.carteles img {
-  max-width: 100%;
-  border-radius: 8px;
+.testimonios .testimonio-card p {
+  font-size: 0.95rem;
+  color: var(--text-color);
+  font-weight: bold;
 }
 
 /*PAGINA PRODUCTOS*/
@@ -233,8 +290,8 @@ footer {
 
 /*PAGINA INFORMACION*/
 #informacion {
-  height: 90vh;
   margin-top: 10px;
+  padding-bottom: 2rem;
 }
 
 .ideas ul {
@@ -270,10 +327,6 @@ footer {
     font-size: 1rem;
     padding: 0.8rem;
   }
-  .container .row {
-    flex-direction: column;
-    gap: 1rem;
-  }
   .container .col {
     flex: 1 1 100%;
     padding: 1rem;
@@ -284,11 +337,11 @@ footer {
 }
 /*PAGINA CONTACTO*/
 #contacto {
-  height: 110vh;
   padding: 2rem 1rem;
   max-width: 800px;
   margin: 0 auto;
   border-radius: 12px;
+  padding-bottom: 2rem;
 }
 #contacto button {
   display: block;
@@ -338,6 +391,7 @@ footer {
   flex-wrap: wrap;
   gap: 20px;
   justify-content: center;
+  align-items: center;
 }
 
 .contenedor-info {

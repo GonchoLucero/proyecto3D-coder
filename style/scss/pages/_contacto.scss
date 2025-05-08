@@ -1,22 +1,22 @@
 /*PAGINA CONTACTO*/
 #contacto {
-    height: 110vh;
     padding: 2rem 1rem;
     max-width: 800px;
     margin: 0 auto;
     border-radius: 12px;
+    padding-bottom: 2rem;
 
     button {
-    display: block;
-    width: 100%;
-    padding: 0.75rem;
-    border: none;
-    background-color: #323539;
-    color: var(--texto-color);
-    font-size: 1.1rem;
-    border-radius: 8px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
+        display: block;
+        width: 100%;
+        padding: 0.75rem;
+        border: none;
+        background-color: #323539;
+        color: var(--texto-color);
+        font-size: 1.1rem;
+        border-radius: 8px;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
     }
 }
 
