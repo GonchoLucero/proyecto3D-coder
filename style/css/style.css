@@ -181,19 +181,18 @@ footer {
 }
 #carrusel-inicio .carousel-control-prev-icon,
 #carrusel-inicio .carousel-control-next-icon {
-  background-image: none;
-  color: black;
-  font-size: 2rem;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  display: none;
 }
-#carrusel-inicio .carousel-control-prev-icon::before,
-#carrusel-inicio .carousel-control-next-icon::before {
+#carrusel-inicio .carousel-control-prev::after,
+#carrusel-inicio .carousel-control-next::after {
+  font-size: 8rem;
+  color: var(--secondary-color);
+  font-weight: bold;
+}
+#carrusel-inicio .carousel-control-prev::after {
   content: "‹";
 }
-#carrusel-inicio .carousel-control-prev-icon::after,
-#carrusel-inicio .carousel-control-next-icon::after {
+#carrusel-inicio .carousel-control-next::after {
   content: "›";
 }
 

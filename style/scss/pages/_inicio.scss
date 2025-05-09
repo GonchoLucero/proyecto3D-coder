@@ -55,21 +55,24 @@
 
     .carousel-control-prev-icon,
     .carousel-control-next-icon {
-        background-image: none;
-        color: black;
-        font-size: 2rem;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-
-        &::before {
-            content: '‹';
-        }
-
-        &::after {
-            content: '›';
-        }
+        display: none;
     }
+
+    .carousel-control-prev::after,
+    .carousel-control-next::after {
+        font-size: 8rem;
+        color: var(--secondary-color);
+        font-weight: bold;
+    }
+
+    .carousel-control-prev::after {
+        content: '‹';
+    }
+
+    .carousel-control-next::after {
+        content: '›';
+    }
+
 }
 
 .testimonios {
@@ -78,35 +81,35 @@
     justify-content: center;
     gap: 2rem;
     padding: 2rem;
-  
-    .testimonio-card {
-      background-color: var(--secondary-color);
-      border-radius: 12px;
-      padding: 1.5rem;
-      max-width: 300px;
-      text-align: center;
-      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-  
-      .testimonio-img {
-        width: 120px;
-        height: 120px;
-        object-fit: cover;
-        border-radius: 50%;
-        margin-bottom: 1rem;
-        border: 3px solid var(--primary-color);
-      }
-  
-      h4 {
-        font-size: 1.1rem;
-        margin-bottom: 0.5rem;
-        color: var(--texto-color);
-      }
-  
-      p {
-        font-size: 0.95rem;
-        color: var(--text-color);
-        font-weight: bold;
 
-      }
+    .testimonio-card {
+        background-color: var(--secondary-color);
+        border-radius: 12px;
+        padding: 1.5rem;
+        max-width: 300px;
+        text-align: center;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+
+        .testimonio-img {
+            width: 120px;
+            height: 120px;
+            object-fit: cover;
+            border-radius: 50%;
+            margin-bottom: 1rem;
+            border: 3px solid var(--primary-color);
+        }
+
+        h4 {
+            font-size: 1.1rem;
+            margin-bottom: 0.5rem;
+            color: var(--texto-color);
+        }
+
+        p {
+            font-size: 0.95rem;
+            color: var(--text-color);
+            font-weight: bold;
+
+        }
     }
-  }
+}
